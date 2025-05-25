@@ -1,0 +1,55 @@
+/* Mobile First Responsive Styles */
+
+/* Small devices (phones, less than 640px) */
+@media (max-width: 639.98px) {
+  .section-title {
+    @apply text-2xl;
+  }
+  
+  .section-subtitle {
+    @apply text-base;
+  }
+  
+  .feature-card {
+    @apply p-6;
+  }
+  
+  .button-primary, .button-secondary {
+    @apply px-4 py-2 text-sm;
+  }
+}
+
+/* Medium devices (tablets, 640px and up) */
+@media (min-width: 640px) and (max-width: 767.98px) {
+  .section-title {
+    @apply text-3xl;
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  /* Tablet-specific styles */
+}
+
+/* Extra large devices (large desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  /* Desktop-specific styles */
+}
+
+/* Extra extra large devices (ultra large desktops, 1280px and up) */
+@media (min-width: 1280px) {
+  .container {
+    @apply max-w-7xl;
+  }
+}
+
+/* Custom component responsive behavior */
+@media (max-width: 767.98px) {
+  .feature-card {
+    @apply transform-none hover:transform-none;
+  }
+  
+  .feasibility-card {
+    @apply transform-none hover:transform-none;
+  }
+}
